@@ -45,7 +45,7 @@ const screenshots = [
 
 const Features = () => {
   const plugin = React.useRef(
-    Autoplay({ delay: 3000, stopOnInteraction: true, stopOnMouseEnter: true })
+    Autoplay({ delay: 3000, stopOnInteraction: false })
   )
 
   return (
@@ -84,11 +84,11 @@ const Features = () => {
             <CarouselContent>
               {screenshots.map(({ src, alt }, index) => (
                 <CarouselItem key={index}>
-                  <div className="rounded-3xl shadow-xl border-4 border-gray-800 overflow-hidden">
+                  <div className="rounded-3xl shadow-xl border-4 border-gray-800 overflow-hidden h-[450px]">
                     <img
                       src={src}
                       alt={alt}
-                      className="w-full h-auto object-cover block"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 </CarouselItem>

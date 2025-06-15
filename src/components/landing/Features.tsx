@@ -1,7 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ScanLine, Split, Wallet } from 'lucide-react';
-import PhoneMockup from './PhoneMockup';
 
 const features = [
   {
@@ -47,7 +46,11 @@ const Features = () => {
            <h3 className="text-3xl font-bold mb-4">Your Finances, Organized</h3>
            <p className="text-muted-foreground mb-8">Manage group expenses, track shared bills, and maintain a clear financial history, all from your account page.</p>
         </div>
-        <PhoneMockup imgSrc="/lovable-uploads/37b0bb0b-9a18-4eca-8b7c-c54fcd56e7b9.png" className="mx-auto" />
+        <div className="relative h-80 md:h-96 lg:h-[500px] w-full flex items-center justify-center group" style={{ perspective: '1000px' }}>
+          <img src="/lovable-uploads/fa8423e0-32d2-4433-ac18-0b5667934a94.png" alt="Account page screenshot" className="absolute w-[200px] md:w-[250px] rounded-3xl shadow-xl transform -rotate-12 transition-transform duration-300 ease-in-out z-10 border-4 border-gray-800 group-hover:-rotate-6" />
+          <img src="/lovable-uploads/e5f975f7-5859-4832-b12a-558f0195c63d.png" alt="Item sharing screenshot" className="absolute w-[200px] md:w-[250px] rounded-3xl shadow-xl transform transition-transform duration-300 ease-in-out z-20 border-4 border-gray-800 group-hover:scale-105" />
+          <img src="/lovable-uploads/c58cfce7-1729-4fad-a3b8-69008e68bb44.png" alt="Friends list screenshot" className="absolute w-[200px] md:w-[250px] rounded-3xl shadow-xl transform rotate-12 transition-transform duration-300 ease-in-out z-10 border-4 border-gray-800 group-hover:rotate-6" />
+        </div>
       </div>
     </section>
   );

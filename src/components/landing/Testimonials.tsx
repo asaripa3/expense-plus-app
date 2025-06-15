@@ -26,7 +26,7 @@ const testimonials = [
     title: "Apartment Roommate",
   },
   {
-    quote: "As someone who organizes a lot of group events, Expense has saved me countless hours and awkward conversations about money. It's brilliant.",
+    quote: "As someone who organizes a lot of group events, Expense+ has saved me countless hours and awkward conversations about money. It's brilliant.",
     name: "David K.",
     title: "Event Organizer",
   },
@@ -47,7 +47,7 @@ const Testimonials = () => {
         </span>
       </h2>
       <p className="md:w-3/4 mx-auto mt-4 mb-16 text-xl text-muted-foreground text-center">
-        Real stories from real people who've simplified their finances with Expense.
+        Real stories from real people who've simplified their finances with Expense+.
       </p>
 
       <Carousel

@@ -27,7 +27,7 @@ const Features = () => {
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
         How{" "}
         <span className="bg-gradient-to-r from-amber-400 to-orange-500 text-transparent bg-clip-text">
-          Expense
+          Expense+
         </span>{" "}
         Works
       </h2>

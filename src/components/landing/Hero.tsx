@@ -7,7 +7,7 @@ import { Star } from 'lucide-react';
 const Hero = () => {
     const handleNotify = () => {
     toast.success("You're on the list!", {
-      description: "We'll notify you as soon as Expense launches.",
+      description: "We'll notify you as soon as Expense+ launches.",
     });
   };
 

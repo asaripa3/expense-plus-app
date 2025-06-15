@@ -5,7 +5,7 @@ import { toast } from "sonner";
 const CTA = () => {
   const handleNotify = () => {
     toast.success("You're on the list!", {
-      description: "We'll notify you as soon as Expense launches.",
+      description: "We'll notify you as soon as Expense+ launches.",
     });
   };
 
@@ -16,7 +16,7 @@ const CTA = () => {
                 Launching Soon on iOS
             </h2>
             <p className="text-xl text-muted-foreground mt-4 mb-8">
-                Be the first to know when Expense hits the App Store.
+                Be the first to know when Expense+ hits the App Store.
             </p>
             <Button onClick={handleNotify} className="w-full md:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg py-6 px-12">
                 Join the Waitlist

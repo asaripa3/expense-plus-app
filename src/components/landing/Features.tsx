@@ -47,7 +47,7 @@ const Features = () => {
            <h3 className="text-3xl font-bold mb-4">Your Finances, Organized</h3>
            <p className="text-muted-foreground mb-8">Manage group expenses, track shared bills, and maintain a clear financial history, all from your account page.</p>
         </div>
-        <PhoneMockup imgSrc="/lovable-uploads/7b3c3efa-1d2a-4f9f-9641-e2470b7083f6.png" className="mx-auto" />
+        <PhoneMockup imgSrc="/lovable-uploads/37b0bb0b-9a18-4eca-8b7c-c54fcd56e7b9.png" className="mx-auto" />
       </div>
     </section>
   );

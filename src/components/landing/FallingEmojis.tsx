@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 
-const EMOJIS = ['💸', '🪙', '💵', '💰'];
+const EMOJIS = ['💸', '🪙', '💵', '💰', '🤑', '💳', '💶', '💎'];
 
 type Emoji = {
   id: number;
@@ -28,7 +28,7 @@ const FallingEmojis = () => {
   const [emojis, setEmojis] = useState<Emoji[]>([]);
   
   useEffect(() => {
-    const emojiCount = 30;
+    const emojiCount = 60;
     const generatedEmojis = Array.from({ length: emojiCount }, (_, i) => createEmoji(i));
     setEmojis(generatedEmojis);
 

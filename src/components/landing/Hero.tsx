@@ -11,6 +11,8 @@ const Hero = () => {
     });
   };
 
+  const videoSrc = "https://drive.google.com/uc?id=1XXnI6vqDNbTUA6UAorbiRBlAeUX5HJwb";
+
   return (
     <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
       <div className="text-center lg:text-start space-y-6">
@@ -56,17 +58,17 @@ const Hero = () => {
 
       <div className="z-10 w-full h-[600px] hidden lg:flex items-center justify-center animate-fade-in-up group" style={{ animationDelay: '0.5s', perspective: '1000px' }}>
         <PhoneMockup
-          imgSrc="/lovable-uploads/c95faf3d-014d-418f-9470-3be4ce6a3af7.png"
+          videoSrc={videoSrc}
           className="absolute z-10 -rotate-12 group-hover:-rotate-6 transition-transform duration-300 ease-in-out"
         />
         <PhoneMockup
-          imgSrc="/lovable-uploads/617614ca-855f-44b8-8716-543ad797058c.png"
+          videoSrc={videoSrc}
           className="absolute z-0 rotate-12 group-hover:rotate-6 transition-transform duration-300 ease-in-out"
         />
       </div>
       
       <div className="z-10 lg:hidden w-full flex justify-center animate-fade-in-up">
-        <PhoneMockup imgSrc="/lovable-uploads/617614ca-855f-44b8-8716-543ad797058c.png" />
+        <PhoneMockup videoSrc={videoSrc} />
       </div>
 
 

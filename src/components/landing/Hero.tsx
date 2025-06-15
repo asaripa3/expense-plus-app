@@ -53,7 +53,7 @@ const Hero = () => {
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-          <Button onClick={handleNotify} className="w-full md:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg py-6 px-8 rounded-full">
+          <Button onClick={handleNotify} className="w-full md:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg py-6 px-8 rounded-full transition-shadow duration-300 hover:shadow-glow">
             Join the Waitlist
           </Button>
         </div>

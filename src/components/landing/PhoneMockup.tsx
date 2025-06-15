@@ -1,4 +1,3 @@
-
 import { cn } from '@/lib/utils';
 import { PlayCircle } from 'lucide-react';
 import React, { useRef, useState } from 'react';
@@ -37,7 +36,7 @@ const PhoneMockup = ({ imgSrc, videoSrc, className, bgColor, children }: PhoneMo
   const containerProps = videoSrc ? { onClick: togglePlay, style: { cursor: 'pointer' } } : {};
 
   return (
-    <div className={cn("relative mx-auto border-black bg-black border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl", className)} {...containerProps}>
+    <div className={cn("relative mx-auto border-black bg-black border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl transition-shadow duration-300 hover:shadow-glow", className)} {...containerProps}>
       <div className="h-[46px] w-[3px] bg-black absolute -start-[17px] top-[124px] rounded-s-lg"></div>
       <div className="h-[46px] w-[3px] bg-black absolute -start-[17px] top-[178px] rounded-s-lg"></div>
       <div className="h-[64px] w-[3px] bg-black absolute -end-[17px] top-[142px] rounded-e-lg"></div>

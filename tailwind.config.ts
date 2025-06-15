@@ -23,6 +23,9 @@ export default {
         poppins: ['Poppins', 'sans-serif'],
         sora: ['Sora', 'sans-serif'],
       },
+      boxShadow: {
+        "glow": "0 0 20px hsl(var(--primary) / 0.6)",
+      },
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

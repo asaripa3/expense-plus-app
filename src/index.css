@@ -52,3 +52,27 @@
     scroll-behavior: smooth;
   }
 }
+
+@layer components {
+  @keyframes fall {
+    from {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(110vh) rotate(720deg);
+      opacity: 0;
+    }
+  }
+
+  .falling-emoji {
+    position: absolute;
+    top: -10vh;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    will-change: transform, opacity;
+    user-select: none;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+}

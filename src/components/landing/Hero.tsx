@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { toast } from "sonner";
 import PhoneMockup from './PhoneMockup';
 import { Star } from 'lucide-react';
+import FallingEmojis from './FallingEmojis';
 
 const Hero = () => {
     const handleNotify = () => {
@@ -15,6 +16,7 @@ const Hero = () => {
 
   return (
     <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
+      <FallingEmojis />
       <div className="text-center lg:text-start space-y-6">
         <div className="animate-fade-in-up">
             <div className="flex justify-center lg:justify-start">

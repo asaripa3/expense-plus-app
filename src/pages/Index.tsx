@@ -5,6 +5,7 @@ import Features from "@/components/landing/Features";
 import HowItWorks from "@/components/landing/HowItWorks";
 import CTA from "@/components/landing/CTA";
 import Footer from "@/components/landing/Footer";
+import Testimonials from "@/components/landing/Testimonials";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
         <Hero />
         <Features />
         <HowItWorks />
+        <Testimonials />
         <CTA />
       </main>
       <Footer />

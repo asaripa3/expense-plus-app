@@ -5,7 +5,7 @@ import Features from "@/components/landing/Features";
 import HowItWorks from "@/components/landing/HowItWorks";
 import CTA from "@/components/landing/CTA";
 import Footer from "@/components/landing/Footer";
-import Testimonials from "@/components/landing/Testimonials";
+import FAQ from "@/components/landing/FAQ";
 import ValueProp from "@/components/landing/ValueProp";
 
 const Index = () => {
@@ -17,7 +17,7 @@ const Index = () => {
         <Features />
         <HowItWorks />
         <ValueProp />
-        <Testimonials />
+        <FAQ />
         <CTA />
       </main>
       <Footer />

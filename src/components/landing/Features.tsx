@@ -8,6 +8,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
+import PhoneMockup from './PhoneMockup';
 
 const features = [
   {
@@ -74,27 +75,27 @@ const Features = () => {
            <p className="text-muted-foreground mb-8">Manage group expenses, track shared bills, and maintain a clear financial history, all from your account page.</p>
         </div>
         <div className="flex items-center justify-center">
-          <Carousel
-            plugins={[plugin.current]}
-            className="w-full max-w-[250px]"
-            opts={{
-              loop: true,
-            }}
-          >
-            <CarouselContent>
-              {screenshots.map(({ src, alt }, index) => (
-                <CarouselItem key={index}>
-                  <div className="rounded-3xl shadow-xl border-4 border-gray-800 overflow-hidden h-[450px]">
+          <PhoneMockup>
+            <Carousel
+              plugins={[plugin.current]}
+              className="w-full h-full"
+              opts={{
+                loop: true,
+              }}
+            >
+              <CarouselContent>
+                {screenshots.map(({ src, alt }, index) => (
+                  <CarouselItem key={index}>
                     <img
                       src={src}
                       alt={alt}
                       className="w-full h-full object-cover"
                     />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
+          </PhoneMockup>
         </div>
       </div>
     </section>

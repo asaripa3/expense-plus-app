@@ -12,7 +12,7 @@ const Hero = () => {
     });
   };
 
-  const videoPreviewSrc = "/app-preview.mp4";
+  const videoPreviewSrc = "/lovable-uploads/app-preview.mp4";
   const phoneBgColor = "#F59E0B";
 
   return (

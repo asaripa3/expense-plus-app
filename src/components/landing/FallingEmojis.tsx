@@ -41,7 +41,7 @@ const FallingEmojis = () => {
   }, []);
 
   return (
-    <div aria-hidden="true" className="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-[100]">
+    <div aria-hidden="true" className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
       {emojis.map((emoji) => (
         <span key={emoji.id} className="falling-emoji" style={emoji.style}>
           {emoji.emoji}

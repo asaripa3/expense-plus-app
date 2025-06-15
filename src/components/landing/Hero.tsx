@@ -16,9 +16,9 @@ const Hero = () => {
   const phoneBgColor = "#F59E0B";
 
   return (
-    <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
+    <section className="relative container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
       <FallingEmojis />
-      <div className="text-center lg:text-start space-y-6">
+      <div className="relative z-10 text-center lg:text-start space-y-6">
         <div className="animate-fade-in-up">
             <div className="flex justify-center lg:justify-start">
                 <div className="flex items-center gap-2 rounded-full bg-secondary/50 px-4 py-2 text-sm font-medium border">
@@ -59,7 +59,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="z-10 w-full h-[600px] hidden lg:flex items-center justify-center animate-fade-in-up group" style={{ animationDelay: '0.5s', perspective: '1000px' }}>
+      <div className="relative z-10 w-full h-[600px] hidden lg:flex items-center justify-center animate-fade-in-up group" style={{ animationDelay: '0.5s', perspective: '1000px' }}>
         <PhoneMockup
           imgSrc={imgSrc}
           bgColor={phoneBgColor}
@@ -72,7 +72,7 @@ const Hero = () => {
         />
       </div>
       
-      <div className="z-10 lg:hidden w-full flex justify-center animate-fade-in-up">
+      <div className="relative z-10 lg:hidden w-full flex justify-center animate-fade-in-up">
         <PhoneMockup imgSrc={imgSrc} bgColor={phoneBgColor} />
       </div>
 

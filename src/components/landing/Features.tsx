@@ -34,10 +34,6 @@ const screenshots = [
     alt: "Account page screenshot",
   },
   {
-    src: "/lovable-uploads/e5f975f7-5859-4832-b12a-558f0195c63d.png",
-    alt: "Item sharing screenshot",
-  },
-  {
     src: "/lovable-uploads/c58cfce7-1729-4fad-a3b8-69008e68bb44.png",
     alt: "Friends list screenshot",
   },

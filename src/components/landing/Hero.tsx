@@ -12,7 +12,7 @@ const Hero = () => {
     });
   };
 
-  const imgSrc = "/lovable-uploads/e3ae5cfb-5ca4-48e6-af44-5df073e59bf2.png";
+  const videoPreviewSrc = "/app-preview.mp4";
   const phoneBgColor = "#F59E0B";
 
   return (
@@ -32,7 +32,7 @@ const Hero = () => {
             </div>
         </div>
 
-        <main className="text-5xl md:text-6xl font-bold animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+        <main className="text-5xl md:text-6xl font-bold animate-fade-in-up font-sora" style={{ animationDelay: '0.2s' }}>
           <h1 className="inline">
             <span className="inline bg-gradient-to-r from-amber-400 to-orange-500 text-transparent bg-clip-text">
               Stop
@@ -59,23 +59,12 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="relative z-10 w-full h-[600px] hidden lg:flex items-center justify-center animate-fade-in-up group" style={{ animationDelay: '0.5s', perspective: '1000px' }}>
+      <div className="relative z-10 flex w-full justify-center animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
         <PhoneMockup
-          imgSrc={imgSrc}
+          videoSrc={videoPreviewSrc}
           bgColor={phoneBgColor}
-          className="absolute z-10 -rotate-12 group-hover:-rotate-6 transition-transform duration-300 ease-in-out"
-        />
-        <PhoneMockup
-          imgSrc={imgSrc}
-          bgColor={phoneBgColor}
-          className="absolute z-0 rotate-12 group-hover:rotate-6 transition-transform duration-300 ease-in-out"
         />
       </div>
-      
-      <div className="relative z-10 lg:hidden w-full flex justify-center animate-fade-in-up">
-        <PhoneMockup imgSrc={imgSrc} bgColor={phoneBgColor} />
-      </div>
-
 
       <div className="absolute inset-0 -z-10 h-full w-full bg-background bg-[radial-gradient(#1E1E1E_1px,transparent_1px)] [background-size:16px_16px]"></div>
     </section>

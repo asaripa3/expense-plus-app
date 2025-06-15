@@ -12,7 +12,8 @@ const Hero = () => {
     });
   };
 
-  const videoSrc = "https://drive.google.com/uc?id=1XXnI6vqDNbTUA6UAorbiRBlAeUX5HJwb";
+  const imgSrc = "/lovable-uploads/e3ae5cfb-5ca4-48e6-af44-5df073e59bf2.png";
+  const phoneBgColor = "#F59E0B";
 
   return (
     <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
@@ -60,17 +61,19 @@ const Hero = () => {
 
       <div className="z-10 w-full h-[600px] hidden lg:flex items-center justify-center animate-fade-in-up group" style={{ animationDelay: '0.5s', perspective: '1000px' }}>
         <PhoneMockup
-          videoSrc={videoSrc}
+          imgSrc={imgSrc}
+          bgColor={phoneBgColor}
           className="absolute z-10 -rotate-12 group-hover:-rotate-6 transition-transform duration-300 ease-in-out"
         />
         <PhoneMockup
-          videoSrc={videoSrc}
+          imgSrc={imgSrc}
+          bgColor={phoneBgColor}
           className="absolute z-0 rotate-12 group-hover:rotate-6 transition-transform duration-300 ease-in-out"
         />
       </div>
       
       <div className="z-10 lg:hidden w-full flex justify-center animate-fade-in-up">
-        <PhoneMockup videoSrc={videoSrc} />
+        <PhoneMockup imgSrc={imgSrc} bgColor={phoneBgColor} />
       </div>
 
 
